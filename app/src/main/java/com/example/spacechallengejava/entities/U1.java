@@ -1,13 +1,16 @@
-package com.example.spacechallengejava;
+package com.example.spacechallengejava.entities;
 
 import java.util.Random;
 
-public class U1 extends  Rocket {
-    public U1(){
-        setCost(100);
-        setWeight(10000);
-        setMaxWeight(18000);
-    }
+public class U1 extends Rocket {
+    @Override
+    public int getCost(){ return 100; }
+
+    @Override
+    protected int getWeight(){ return 10000; }
+
+    @Override
+    protected int getMaxWeight(){ return 18000; }
 
     @Override
     public boolean launch(){

@@ -1,51 +1,17 @@
-package com.example.spacechallengejava;
+package com.example.spacechallengejava.entities;
 
-public class Rocket implements SpaceShip{
+import com.example.spacechallengejava.SpaceShip;
+
+public class Rocket implements SpaceShip {
 
     private int cost, weight, maxWeight, fillWeight;
     double launchExplosion, landingCrash;
 
-    public int getCost(){
-        return cost;
-    }
-    public void setCost(int cost){
-        if(cost > 0){
-            this.cost = cost;
-        }
-        else{
-            this.cost = 0;
-        }
-    }
-
-    public int getWeight(){ return weight; }
-    public void setWeight(int weight){
-        if(weight > 0){
-            this.weight = weight;
-        }
-        else{
-            this.weight = 0;
-        }
-    }
+    public int getCost(){ return cost; }
+    protected int getWeight(){ return weight; }
+    protected int getMaxWeight(){ return maxWeight; }
 
     public int getFillWeight(){ return fillWeight; }
-    public void setFillWeight(int fillWeight){
-        if(fillWeight > 0){
-            this.fillWeight = fillWeight;
-        }
-        else{
-            this.fillWeight = 0;
-        }
-    }
-
-    public int getMaxWeight(){ return maxWeight; }
-    public void setMaxWeight(int maxWeight){
-        if(maxWeight > 0){
-            this.maxWeight = maxWeight;
-        }
-        else{
-            this.maxWeight = 0;
-        }
-    }
 
     public double getLaunchExplosion(){
         return launchExplosion;

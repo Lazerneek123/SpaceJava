@@ -1,4 +1,4 @@
-package com.example.spacechallengejava;
+package com.example.spacechallengejava.entities;
 
 public class Item {
     private String name;
