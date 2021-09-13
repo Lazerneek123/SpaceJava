@@ -4,13 +4,15 @@ public class Item {
     private String name;
     private int weight;
 
-    public String getName(){ return name; }
+    public String getName() {
+        return name;
+    }
 
     public void setName(String name){
         this.name = name;
     }
 
-    public int getWeight(){
+    int getWeight(){
         return weight;
     }
 
